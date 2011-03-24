@@ -15,6 +15,8 @@
 		FAC6DECA133B7DB70063CA39 /* AETasksTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FAC6DEC9133B7DB70063CA39 /* AETasksTests.h */; };
 		FAC6DECC133B7DB70063CA39 /* AETasksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6DECB133B7DB70063CA39 /* AETasksTests.m */; };
 		FAC6DED8133B83090063CA39 /* StandardIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC6DED7133B83090063CA39 /* StandardIncludes.h */; };
+		FAC6DEDA133B89640063CA39 /* StandardIncludes.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6DED9133B89640063CA39 /* StandardIncludes.m */; };
+		FAC6DEDB133B89640063CA39 /* StandardIncludes.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6DED9133B89640063CA39 /* StandardIncludes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,7 @@
 		FAC6DEC9133B7DB70063CA39 /* AETasksTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETasksTests.h; sourceTree = "<group>"; };
 		FAC6DECB133B7DB70063CA39 /* AETasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETasksTests.m; sourceTree = "<group>"; };
 		FAC6DED7133B83090063CA39 /* StandardIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StandardIncludes.h; path = AETasks.xcodeproj/StandardIncludes.h; sourceTree = "<group>"; };
+		FAC6DED9133B89640063CA39 /* StandardIncludes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardIncludes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC6DED7133B83090063CA39 /* StandardIncludes.h */,
+				FAC6DED9133B89640063CA39 /* StandardIncludes.m */,
 				FAC6DEB1133B7DB70063CA39 /* AETasks */,
 				FAC6DEC2133B7DB70063CA39 /* AETasksTests */,
 				FAC6DEAA133B7DB70063CA39 /* Frameworks */,
@@ -261,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC6DEDA133B89640063CA39 /* StandardIncludes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC6DECC133B7DB70063CA39 /* AETasksTests.m in Sources */,
+				FAC6DEDB133B89640063CA39 /* StandardIncludes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
