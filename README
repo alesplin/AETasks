@@ -1,3 +1,6 @@
-AETasks is meant to be a task/todo list framework to support the underlying concept of a task.
+AETasks is meant to be a task/todo list framework to support the underlying
+concept of a task.
 
-It was created with the goal in mind of serving as the backend to command-line or GUI based task/todo lists, but not meant to be a standalone list in and of itself.
+It was created with the goal in mind of serving as the backend to
+command-line or GUI based task/todo lists, but not meant to be a standalone
+list in and of itself.
