@@ -18,6 +18,9 @@
 		FAC6DEDA133B89640063CA39 /* StandardIncludes.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6DED9133B89640063CA39 /* StandardIncludes.m */; };
 		FAC6DEDB133B89640063CA39 /* StandardIncludes.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6DED9133B89640063CA39 /* StandardIncludes.m */; };
 		FAC6DEDD133B8AB90063CA39 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FAC6DEDC133B8AB90063CA39 /* README */; };
+		FAF237F1133B9EAA0069B2C1 /* AETask.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF237EF133B9EAA0069B2C1 /* AETask.h */; };
+		FAF237F2133B9EAA0069B2C1 /* AETask.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF237F0133B9EAA0069B2C1 /* AETask.m */; };
+		FAF237F3133B9EAA0069B2C1 /* AETask.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF237F0133B9EAA0069B2C1 /* AETask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,8 @@
 		FAC6DED7133B83090063CA39 /* StandardIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StandardIncludes.h; path = AETasks.xcodeproj/StandardIncludes.h; sourceTree = "<group>"; };
 		FAC6DED9133B89640063CA39 /* StandardIncludes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardIncludes.m; sourceTree = "<group>"; };
 		FAC6DEDC133B8AB90063CA39 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		FAF237EF133B9EAA0069B2C1 /* AETask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AETask.h; sourceTree = "<group>"; };
+		FAF237F0133B9EAA0069B2C1 /* AETask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AETask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				FAC6DEDC133B8AB90063CA39 /* README */,
+				FAF237EF133B9EAA0069B2C1 /* AETask.h */,
+				FAF237F0133B9EAA0069B2C1 /* AETask.m */,
 				FAC6DED7133B83090063CA39 /* StandardIncludes.h */,
 				FAC6DED9133B89640063CA39 /* StandardIncludes.m */,
 				FAC6DEB1133B7DB70063CA39 /* AETasks */,
@@ -158,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC6DED8133B83090063CA39 /* StandardIncludes.h in Headers */,
+				FAF237F1133B9EAA0069B2C1 /* AETask.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC6DEDA133B89640063CA39 /* StandardIncludes.m in Sources */,
+				FAF237F2133B9EAA0069B2C1 /* AETask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +288,7 @@
 			files = (
 				FAC6DECC133B7DB70063CA39 /* AETasksTests.m in Sources */,
 				FAC6DEDB133B89640063CA39 /* StandardIncludes.m in Sources */,
+				FAF237F3133B9EAA0069B2C1 /* AETask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +449,7 @@
 				FAC6DED1133B7DB70063CA39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAC6DED2133B7DB70063CA39 /* Build configuration list for PBXNativeTarget "AETasksTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +458,7 @@
 				FAC6DED4133B7DB70063CA39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
