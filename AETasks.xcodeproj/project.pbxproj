@@ -32,13 +32,13 @@
 		FAC6DEAE133B7DB70063CA39 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FAC6DEAF133B7DB70063CA39 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FAC6DEB0133B7DB70063CA39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FAC6DEB3133B7DB70063CA39 /* AETasks-Info.plist */ = {isa = PBXFileReference; path = "AETasks-Info.plist"; sourceTree = "<group>"; };
+		FAC6DEB3133B7DB70063CA39 /* AETasks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AETasks-Info.plist"; sourceTree = "<group>"; };
 		FAC6DEB5133B7DB70063CA39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FAC6DEB7133B7DB70063CA39 /* AETasks-Prefix.pch */ = {isa = PBXFileReference; path = "AETasks-Prefix.pch"; sourceTree = "<group>"; };
+		FAC6DEB7133B7DB70063CA39 /* AETasks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AETasks-Prefix.pch"; sourceTree = "<group>"; };
 		FAC6DEBD133B7DB70063CA39 /* AETasksTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AETasksTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAC6DEC4133B7DB70063CA39 /* AETasksTests-Info.plist */ = {isa = PBXFileReference; path = "AETasksTests-Info.plist"; sourceTree = "<group>"; };
+		FAC6DEC4133B7DB70063CA39 /* AETasksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AETasksTests-Info.plist"; sourceTree = "<group>"; };
 		FAC6DEC6133B7DB70063CA39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FAC6DEC8133B7DB70063CA39 /* AETasksTests-Prefix.pch */ = {isa = PBXFileReference; path = "AETasksTests-Prefix.pch"; sourceTree = "<group>"; };
+		FAC6DEC8133B7DB70063CA39 /* AETasksTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AETasksTests-Prefix.pch"; sourceTree = "<group>"; };
 		FAC6DEC9133B7DB70063CA39 /* AETasksTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETasksTests.h; sourceTree = "<group>"; };
 		FAC6DECB133B7DB70063CA39 /* AETasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETasksTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
