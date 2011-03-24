@@ -14,6 +14,7 @@
 		FAC6DEC7133B7DB70063CA39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAC6DEC5133B7DB70063CA39 /* InfoPlist.strings */; };
 		FAC6DECA133B7DB70063CA39 /* AETasksTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FAC6DEC9133B7DB70063CA39 /* AETasksTests.h */; };
 		FAC6DECC133B7DB70063CA39 /* AETasksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6DECB133B7DB70063CA39 /* AETasksTests.m */; };
+		FAC6DED8133B83090063CA39 /* StandardIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC6DED7133B83090063CA39 /* StandardIncludes.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		FAC6DEC8133B7DB70063CA39 /* AETasksTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AETasksTests-Prefix.pch"; sourceTree = "<group>"; };
 		FAC6DEC9133B7DB70063CA39 /* AETasksTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETasksTests.h; sourceTree = "<group>"; };
 		FAC6DECB133B7DB70063CA39 /* AETasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETasksTests.m; sourceTree = "<group>"; };
+		FAC6DED7133B83090063CA39 /* StandardIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StandardIncludes.h; path = AETasks.xcodeproj/StandardIncludes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		FAC6DE9C133B7DB60063CA39 = {
 			isa = PBXGroup;
 			children = (
+				FAC6DED7133B83090063CA39 /* StandardIncludes.h */,
 				FAC6DEB1133B7DB70063CA39 /* AETasks */,
 				FAC6DEC2133B7DB70063CA39 /* AETasksTests */,
 				FAC6DEAA133B7DB70063CA39 /* Frameworks */,
@@ -147,6 +150,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC6DED8133B83090063CA39 /* StandardIncludes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
