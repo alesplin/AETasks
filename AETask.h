@@ -28,9 +28,10 @@
  *                              Properties                                     *
  ******************************************************************************/
 
-@property (readwrite,assign)    int priority;
-@property (readwrite,assign)    AETState state;
-@property (readonly)            NSString *taglist;
+@property (readwrite,assign)    int         priority;
+@property (readwrite,assign)    AETState    state;
+@property (readwrite,retain)    NSDate      *dueDate;
+@property (readonly)            NSString    *tagList;
 
 /*******************************************************************************
  *                          Instance Functions                                 *
@@ -47,11 +48,23 @@
 - (id) initWithName:(NSString *)name 
             DueDate:(NSDate *)dueDate 
            Priority:(int)prio 
-            TagList:(NSArray *)tagList;
+            TagList:(NSArray *)tags;
+- (id) initWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+           Priority:(int)prio 
+            TagList:(NSArray *)tags 
+              State:(AETState) state;
+- (id) initWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+           Priority:(int)prio 
+            TagList:(NSArray *)tags 
+              State:(AETState) state 
+           Category:(NSString *)category;
 
 /* modifiers */
-- (void) addSubTask:(AETask *)subTask;
-- (void) addTag:(NSString *)tag;
+- (void) addSubTask:(AETask *)  subTask;
+- (void) addTag:(NSString *)    tag;
+- (void) removeTag:(NSString *) tag;
 
 
 /*******************************************************************************
@@ -68,7 +81,18 @@
 + (id) TaskWithName:(NSString *)name 
             DueDate:(NSDate *)dueDate 
            Priority:(int)prio 
-            TagList:(NSArray *)tagList;
+            TagList:(NSArray *)tags;
+- (id) TaskWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+           Priority:(int)prio 
+            TagList:(NSArray *)tags 
+              State:(AETState) state;
+- (id) TaskWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+           Priority:(int)prio 
+            TagList:(NSArray *)tags 
+              State:(AETState) state 
+           Category:(NSString *)category;
 
 
 @end
