@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAC6DEAC133B7DB70063CA39 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC6DEAB133B7DB70063CA39 /* Cocoa.framework */; };
+		FAC6DEB6133B7DB70063CA39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAC6DEB4133B7DB70063CA39 /* InfoPlist.strings */; };
+		FAC6DEBE133B7DB70063CA39 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC6DEAB133B7DB70063CA39 /* Cocoa.framework */; };
+		FAC6DEC1133B7DB70063CA39 /* AETasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC6DEA8133B7DB70063CA39 /* AETasks.framework */; };
+		FAC6DEC7133B7DB70063CA39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAC6DEC5133B7DB70063CA39 /* InfoPlist.strings */; };
+		FAC6DECA133B7DB70063CA39 /* AETasksTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FAC6DEC9133B7DB70063CA39 /* AETasksTests.h */; };
+		FAC6DECC133B7DB70063CA39 /* AETasksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6DECB133B7DB70063CA39 /* AETasksTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAC6DEBF133B7DB70063CA39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC6DE9E133B7DB60063CA39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC6DEA7133B7DB70063CA39;
+			remoteInfo = AETasks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAC6DEA8133B7DB70063CA39 /* AETasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AETasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC6DEAB133B7DB70063CA39 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FAC6DEAE133B7DB70063CA39 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FAC6DEAF133B7DB70063CA39 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FAC6DEB0133B7DB70063CA39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAC6DEB3133B7DB70063CA39 /* AETasks-Info.plist */ = {isa = PBXFileReference; path = "AETasks-Info.plist"; sourceTree = "<group>"; };
+		FAC6DEB5133B7DB70063CA39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAC6DEB7133B7DB70063CA39 /* AETasks-Prefix.pch */ = {isa = PBXFileReference; path = "AETasks-Prefix.pch"; sourceTree = "<group>"; };
+		FAC6DEBD133B7DB70063CA39 /* AETasksTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AETasksTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC6DEC4133B7DB70063CA39 /* AETasksTests-Info.plist */ = {isa = PBXFileReference; path = "AETasksTests-Info.plist"; sourceTree = "<group>"; };
+		FAC6DEC6133B7DB70063CA39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAC6DEC8133B7DB70063CA39 /* AETasksTests-Prefix.pch */ = {isa = PBXFileReference; path = "AETasksTests-Prefix.pch"; sourceTree = "<group>"; };
+		FAC6DEC9133B7DB70063CA39 /* AETasksTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETasksTests.h; sourceTree = "<group>"; };
+		FAC6DECB133B7DB70063CA39 /* AETasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETasksTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC6DEA4133B7DB70063CA39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC6DEAC133B7DB70063CA39 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC6DEB9133B7DB70063CA39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC6DEBE133B7DB70063CA39 /* Cocoa.framework in Frameworks */,
+				FAC6DEC1133B7DB70063CA39 /* AETasks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAC6DE9C133B7DB60063CA39 = {
+			isa = PBXGroup;
+			children = (
+				FAC6DEB1133B7DB70063CA39 /* AETasks */,
+				FAC6DEC2133B7DB70063CA39 /* AETasksTests */,
+				FAC6DEAA133B7DB70063CA39 /* Frameworks */,
+				FAC6DEA9133B7DB70063CA39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC6DEA9133B7DB70063CA39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6DEA8133B7DB70063CA39 /* AETasks.framework */,
+				FAC6DEBD133B7DB70063CA39 /* AETasksTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC6DEAA133B7DB70063CA39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6DEAB133B7DB70063CA39 /* Cocoa.framework */,
+				FAC6DEAD133B7DB70063CA39 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAC6DEAD133B7DB70063CA39 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6DEAE133B7DB70063CA39 /* AppKit.framework */,
+				FAC6DEAF133B7DB70063CA39 /* CoreData.framework */,
+				FAC6DEB0133B7DB70063CA39 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FAC6DEB1133B7DB70063CA39 /* AETasks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6DEB2133B7DB70063CA39 /* Supporting Files */,
+			);
+			path = AETasks;
+			sourceTree = "<group>";
+		};
+		FAC6DEB2133B7DB70063CA39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6DEB3133B7DB70063CA39 /* AETasks-Info.plist */,
+				FAC6DEB4133B7DB70063CA39 /* InfoPlist.strings */,
+				FAC6DEB7133B7DB70063CA39 /* AETasks-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAC6DEC2133B7DB70063CA39 /* AETasksTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6DEC9133B7DB70063CA39 /* AETasksTests.h */,
+				FAC6DECB133B7DB70063CA39 /* AETasksTests.m */,
+				FAC6DEC3133B7DB70063CA39 /* Supporting Files */,
+			);
+			path = AETasksTests;
+			sourceTree = "<group>";
+		};
+		FAC6DEC3133B7DB70063CA39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6DEC4133B7DB70063CA39 /* AETasksTests-Info.plist */,
+				FAC6DEC5133B7DB70063CA39 /* InfoPlist.strings */,
+				FAC6DEC8133B7DB70063CA39 /* AETasksTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FAC6DEA5133B7DB70063CA39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FAC6DEA7133B7DB70063CA39 /* AETasks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC6DECF133B7DB70063CA39 /* Build configuration list for PBXNativeTarget "AETasks" */;
+			buildPhases = (
+				FAC6DEA3133B7DB70063CA39 /* Sources */,
+				FAC6DEA4133B7DB70063CA39 /* Frameworks */,
+				FAC6DEA5133B7DB70063CA39 /* Headers */,
+				FAC6DEA6133B7DB70063CA39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AETasks;
+			productName = AETasks;
+			productReference = FAC6DEA8133B7DB70063CA39 /* AETasks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAC6DEBC133B7DB70063CA39 /* AETasksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC6DED2133B7DB70063CA39 /* Build configuration list for PBXNativeTarget "AETasksTests" */;
+			buildPhases = (
+				FAC6DEB8133B7DB70063CA39 /* Sources */,
+				FAC6DEB9133B7DB70063CA39 /* Frameworks */,
+				FAC6DEBA133B7DB70063CA39 /* Resources */,
+				FAC6DEBB133B7DB70063CA39 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC6DEC0133B7DB70063CA39 /* PBXTargetDependency */,
+			);
+			name = AETasksTests;
+			productName = AETasksTests;
+			productReference = FAC6DEBD133B7DB70063CA39 /* AETasksTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC6DE9E133B7DB60063CA39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Alex Esplin";
+			};
+			buildConfigurationList = FAC6DEA1133B7DB60063CA39 /* Build configuration list for PBXProject "AETasks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAC6DE9C133B7DB60063CA39;
+			productRefGroup = FAC6DEA9133B7DB70063CA39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC6DEA7133B7DB70063CA39 /* AETasks */,
+				FAC6DEBC133B7DB70063CA39 /* AETasksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC6DEA6133B7DB70063CA39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC6DEB6133B7DB70063CA39 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC6DEBA133B7DB70063CA39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC6DEC7133B7DB70063CA39 /* InfoPlist.strings in Resources */,
+				FAC6DECA133B7DB70063CA39 /* AETasksTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FAC6DEBB133B7DB70063CA39 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC6DEA3133B7DB70063CA39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC6DEB8133B7DB70063CA39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC6DECC133B7DB70063CA39 /* AETasksTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAC6DEC0133B7DB70063CA39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC6DEA7133B7DB70063CA39 /* AETasks */;
+			targetProxy = FAC6DEBF133B7DB70063CA39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAC6DEB4133B7DB70063CA39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC6DEB5133B7DB70063CA39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAC6DEC5133B7DB70063CA39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC6DEC6133B7DB70063CA39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAC6DECD133B7DB70063CA39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FAC6DECE133B7DB70063CA39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FAC6DED0133B7DB70063CA39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AETasks/AETasks-Prefix.pch";
+				INFOPLIST_FILE = "AETasks/AETasks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		FAC6DED1133B7DB70063CA39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AETasks/AETasks-Prefix.pch";
+				INFOPLIST_FILE = "AETasks/AETasks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		FAC6DED3133B7DB70063CA39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AETasksTests/AETasksTests-Prefix.pch";
+				INFOPLIST_FILE = "AETasksTests/AETasksTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FAC6DED4133B7DB70063CA39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AETasksTests/AETasksTests-Prefix.pch";
+				INFOPLIST_FILE = "AETasksTests/AETasksTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC6DEA1133B7DB60063CA39 /* Build configuration list for PBXProject "AETasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC6DECD133B7DB70063CA39 /* Debug */,
+				FAC6DECE133B7DB70063CA39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC6DECF133B7DB70063CA39 /* Build configuration list for PBXNativeTarget "AETasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC6DED0133B7DB70063CA39 /* Debug */,
+				FAC6DED1133B7DB70063CA39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAC6DED2133B7DB70063CA39 /* Build configuration list for PBXNativeTarget "AETasksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC6DED3133B7DB70063CA39 /* Debug */,
+				FAC6DED4133B7DB70063CA39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAC6DE9E133B7DB60063CA39 /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AETasks' target in the 'AETasks' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
