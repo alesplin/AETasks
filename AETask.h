@@ -72,26 +72,26 @@
  ******************************************************************************/
 
 /* creators */
-+ (id) TaskWithName:(NSString *)name;
-+ (id) TaskWithName:(NSString *)name 
++ (id) taskWithName:(NSString *)name;
++ (id) taskWithName:(NSString *)name 
             DueDate:(NSDate *)dueDate;
-+ (id) TaskWithName:(NSString *)name 
++ (id) taskWithName:(NSString *)name 
             DueDate:(NSDate *)dueDate 
            Priority:(int)prio;
-+ (id) TaskWithName:(NSString *)name 
++ (id) taskWithName:(NSString *)name 
             DueDate:(NSDate *)dueDate 
            Priority:(int)prio 
             TagList:(NSArray *)tags;
-- (id) TaskWithName:(NSString *)name 
+- (id) taskWithName:(NSString *)name 
             DueDate:(NSDate *)dueDate 
            Priority:(int)prio 
             TagList:(NSArray *)tags 
-              State:(AETState) state;
-- (id) TaskWithName:(NSString *)name 
+              State:(AETState)state;
+- (id) taskWithName:(NSString *)name 
             DueDate:(NSDate *)dueDate 
            Priority:(int)prio 
             TagList:(NSArray *)tags 
-              State:(AETState) state 
+              State:(AETState)state 
            Category:(NSString *)category;
 
 

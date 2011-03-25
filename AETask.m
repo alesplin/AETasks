@@ -45,12 +45,73 @@
 /**
  Abbreviated init functions
  */
-- (id) initWithName:(NSString *)name {
+- (id) init
+{
+    return [self initWithName:nil 
+                      DueDate:nil 
+                     Priority:NO_PRIORITY 
+                      TagList:nil 
+                        State:AETStateNone 
+                     Category:nil];
+}
+
+- (id) initWithName:(NSString *)name 
+{
     return [self initWithName:name 
                       DueDate:nil 
                      Priority:NO_PRIORITY 
                       TagList:nil 
                         State:AETStateNone 
+                     Category:nil];
+}
+
+- (id) initWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+{
+    return [self initWithName:name 
+                      DueDate:dueDate 
+                     Priority:NO_PRIORITY 
+                      TagList:nil 
+                        State:AETStateNone 
+                     Category:nil];
+}
+
+- (id) initWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+           Priority:(int)prio 
+{
+    return [self initWithName:name 
+                      DueDate:dueDate 
+                     Priority:prio 
+                      TagList:nil 
+                        State:AETStateNone 
+                     Category:nil];
+}
+
+- (id) initWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+           Priority:(int)prio 
+            TagList:(NSArray *)tags
+{
+    return [self initWithName:name 
+                      DueDate:dueDate 
+                     Priority:prio 
+                      TagList:tags 
+                        State:AETStateNone 
+                     Category:nil];
+}
+
+- (id) initWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+           Priority:(int)prio 
+            TagList:(NSArray *)tags 
+              State:(AETState)state
+{
+    return [self initWithName:name 
+                      DueDate:dueDate 
+                     Priority:prio 
+                      TagList:tags 
+                        State:state 
                      Category:nil];
 }
 
@@ -85,6 +146,71 @@
     }
     
     return self;
+}
+
+
+/*******************************************************************************
+ *                              Class Functions                                *
+ ******************************************************************************/
+
++ (id) taskWithName:(NSString *)name
+{
+    return [[AETask alloc] initWithName:name];
+}
+
++ (id) taskWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate
+{
+    return [[AETask alloc] initWithName:name 
+                                DueDate:dueDate];
+}
+
++ (id) taskWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+           Priority:(int)prio
+{
+    return [[AETask alloc] initWithName:name 
+                                DueDate:dueDate 
+                               Priority:prio];
+}
+
++ (id) taskWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+           Priority:(int)prio 
+            TagList:(NSArray *)tags
+{
+    return [[AETask alloc] initWithName:name 
+                                DueDate:dueDate 
+                               Priority:prio 
+                                TagList:tags];
+}
+
++ (id) taskWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+           Priority:(int)prio 
+            TagList:(NSArray *)tags 
+              State:(AETState)state
+{
+    return [[AETask alloc] initWithName:name 
+                                DueDate:dueDate 
+                               Priority:prio 
+                                TagList:tags 
+                                  State:state];
+}
+
++ (id) taskWithName:(NSString *)name 
+            DueDate:(NSDate *)dueDate 
+           Priority:(int)prio 
+            TagList:(NSArray *)tags 
+              State:(AETState)state 
+           Category:(NSString *)category
+{
+    return [[AETask alloc] initWithName:name 
+                                DueDate:dueDate 
+                               Priority:prio 
+                                TagList:tags 
+                                  State:state 
+                               Category:category];
 }
 
 - (void)dealloc
