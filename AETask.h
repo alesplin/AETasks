@@ -24,20 +24,14 @@
     
 }
 
-/*******************************************************************************
- *                              Properties                                     *
- ******************************************************************************/
+#pragma mark Properties
 
 @property (readwrite,assign)    int         priority;
 @property (readwrite,assign)    AETState    state;
 @property (readwrite,retain)    NSDate      *dueDate;
 @property (readonly)            NSString    *tagList;
 
-/*******************************************************************************
- *                          Instance Functions                                 *
- ******************************************************************************/
-
-/* creators */
+#pragma mark Instance Initialization
 
 - (id) initWithName:(NSString *)name;
 - (id) initWithName:(NSString *)name 
@@ -61,17 +55,8 @@
               State:(AETState) state 
            Category:(NSString *)category;
 
-/* modifiers */
-- (void) addSubTask:(AETask *)  subTask;
-- (void) addTag:(NSString *)    tag;
-- (void) removeTag:(NSString *) tag;
+#pragma mark Class Initialization
 
-
-/*******************************************************************************
- *                              Class Functions                                *
- ******************************************************************************/
-
-/* creators */
 + (id) taskWithName:(NSString *)name;
 + (id) taskWithName:(NSString *)name 
             DueDate:(NSDate *)dueDate;
@@ -93,6 +78,13 @@
             TagList:(NSArray *)tags 
               State:(AETState)state 
            Category:(NSString *)category;
+
+#pragma mark Task Modifiers
+
+- (void) addSubTask:(AETask *)  subTask;
+- (void) addTag:(NSString *)    tag;
+- (void) removeTag:(NSString *) tag;
+
 
 
 @end

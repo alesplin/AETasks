@@ -12,9 +12,7 @@
 @implementation AETask
 
 
-/*******************************************************************************
- *                              Properties                                     *
- ******************************************************************************/
+#pragma mark Properties
 @synthesize priority=Priority;
 @synthesize state=State;
 @synthesize dueDate=DueDate;
@@ -41,6 +39,7 @@
     return tl;
 }
 
+#pragma mark Instance Initializers
 
 /**
  Abbreviated init functions
@@ -148,10 +147,7 @@
     return self;
 }
 
-
-/*******************************************************************************
- *                              Class Functions                                *
- ******************************************************************************/
+#pragma mark Class Initializers
 
 + (id) taskWithName:(NSString *)name
 {
@@ -212,6 +208,8 @@
                                   State:state 
                                Category:category];
 }
+
+#pragma mark Task Modifiers
 
 - (void)dealloc
 {
