@@ -16,7 +16,7 @@
     NSString        *Category;
     AETState         State;
     NSMutableArray  *SubTaskList;
-    NSMutableArray  *Tags;
+    NSMutableArray  *TagList;
     NSDate          *DueDate;
     int              Priority;
     

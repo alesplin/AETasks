@@ -28,10 +28,10 @@
     
     NSMutableString *tl = [[NSString alloc] initWithFormat:@""];
     
-    for (tIndex = 0; tIndex < [Tags count]; tIndex++) {
+    for (tIndex = 0; tIndex < [TagList count]; tIndex++) {
         
-        [tl appendFormat:@"%@",[Tags objectAtIndex:tIndex]];
-        if (tIndex < [Tags count] - 1) {
+        [tl appendFormat:@"%@",[TagList objectAtIndex:tIndex]];
+        if (tIndex < [TagList count] - 1) {
             [tl appendFormat:@", "];
         }
     }
@@ -136,7 +136,7 @@
         DueDate = (dueDate != nil) ? [dueDate retain] : [NSDate distantFuture];
         Priority = prio;
         //Tags = [[NSMutableArray alloc] initWithCapacity:[tags count]];
-        Tags = (tags != nil) ? [tags mutableCopy] : [[NSMutableArray alloc] 
+        TagList = (tags != nil) ? [tags mutableCopy] : [[NSMutableArray alloc] 
                                                      initWithCapacity:10];
         State = state;
         Category = (category != nil) ? [category retain] : [[NSString alloc] 
@@ -211,9 +211,64 @@
 
 #pragma mark Task Modifiers
 
+/**
+ Add a subtask.
+ 
+ @param subTask -- the subtask to add
+ 
+ @return none
+ */
+- (void) addSubTask:(AETask *)subTask {
+    [SubTaskList addObject:subTask];
+}
+
+/**
+ Add a tag to the tag list
+ 
+ @param tag -- the tag to add
+ 
+ @return none
+ */
+- (void) addTag:(NSString *)tag {
+    [TagList addObject:tag];
+}
+
+/**
+ Remove a tag from the tag list
+ 
+ @param tag -- the tag to remove
+ 
+ @return none
+ */
+- (void) removeTag:(NSString *) tag {
+    [TagList removeObject:tag];
+}
+
+
 - (void)dealloc
 {
     [super dealloc];
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
