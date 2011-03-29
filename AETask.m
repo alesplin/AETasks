@@ -13,6 +13,7 @@
 
 
 #pragma mark Properties
+@synthesize name=TaskName;
 @synthesize priority=Priority;
 @synthesize state=State;
 @synthesize dueDate=DueDate;
@@ -240,11 +241,45 @@
  
  @return none
  */
-- (void) removeTag:(NSString *) tag {
+- (void) removeTag:(NSString *)tag {
     [TagList removeObject:tag];
 }
 
+#pragma mark Task Identifiers
 
+/**
+ Check to see if this task is associated with the given tag
+ 
+ @param tag -- the tag we're checking
+ 
+ @return    True if this task has the given tag
+            False otherwise
+ */
+- (BOOL) hasTag:(NSString *)tag {
+    if ([TagList containsObject:tag]) {
+        return YES;
+    }
+    return NO;
+}
+
+/**
+ Check to see if this task is the same as the other task
+ 
+ @param other -- the task we're checking
+ 
+ @return    True if this task has the same name as the other task
+            False otherwise
+ */
+- (BOOL) isEqual:(id)other {
+    AETask *otherTask = (AETask *)other;
+    
+    if ([TaskName isEqualToString:otherTask.name]) {
+        return YES;
+    }
+    return NO;
+}
+
+#pragma mark Bookkeeping
 - (void)dealloc
 {
     [super dealloc];

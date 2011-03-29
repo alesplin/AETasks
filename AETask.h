@@ -26,6 +26,7 @@
 
 #pragma mark Properties
 
+@property (readwrite,retain)    NSString    *name;
 @property (readwrite,assign)    int         priority;
 @property (readwrite,assign)    AETState    state;
 @property (readwrite,retain)    NSDate      *dueDate;
@@ -85,6 +86,30 @@
 - (void) addTag:(NSString *)    tag;
 - (void) removeTag:(NSString *) tag;
 
+#pragma mark Task Identifiers
 
+- (BOOL)                hasTag:(NSString *)     tag;
+- (BOOL)                isEqual:(id)            other;
+- (NSComparisonResult)  compareTo:(AETask *)    other;
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
