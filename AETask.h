@@ -90,7 +90,7 @@
 
 - (BOOL)                hasTag:(NSString *)     tag;
 - (BOOL)                isEqual:(id)            other;
-- (NSComparisonResult)  compareTo:(AETask *)    other;
+- (NSComparisonResult)  compareTo:(id)    other;
 
 @end
 

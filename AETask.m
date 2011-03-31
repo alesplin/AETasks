@@ -279,6 +279,23 @@
     return NO;
 }
 
+/**
+ Compare this task to another to determine ordering
+ 
+ @param other -- the task we're comparing to
+ 
+ @return    -NSOrderedAscending if this task's name is lexicographically before 
+             the other task's
+            -NSOrderedSame if this task's name is the same as the other tasks's
+            -NSOrderedDescending if this task's name is lexicographically after 
+             the other task's
+ */
+- (NSComparisonResult) compareTo:(id)other {
+    AETask *otherTask = (AETask *)other;
+    
+    return [TaskName localizedCompare:otherTask.name];
+}
+
 #pragma mark Bookkeeping
 - (void)dealloc
 {
