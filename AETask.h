@@ -68,12 +68,12 @@
             DueDate:(NSDate *)dueDate 
            Priority:(int)prio 
             TagList:(NSArray *)tags;
-- (id) taskWithName:(NSString *)name 
++ (id) taskWithName:(NSString *)name 
             DueDate:(NSDate *)dueDate 
            Priority:(int)prio 
             TagList:(NSArray *)tags 
               State:(AETState)state;
-- (id) taskWithName:(NSString *)name 
++ (id) taskWithName:(NSString *)name 
             DueDate:(NSDate *)dueDate 
            Priority:(int)prio 
             TagList:(NSArray *)tags 
