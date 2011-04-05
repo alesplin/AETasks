@@ -28,6 +28,11 @@
     tag4 = [NSString stringWithFormat:@"tag4"];
     tag5 = [NSString stringWithFormat:@"tag5"];
     
+    tl1 = [NSMutableArray arrayWithObjects:tag1,tag2,tag3,tag4,tag5 nil];
+    tl2 = [NSMutableArray arrayWithObjects:tag1,tag3,tag5, nil];
+    tl3 = [NSMutableArray arrayWithObjects:tag2,tag4, nil];
+    tl4 = [NSMutableArray arrayWithObjects:tag1,tag2,tag3,tag5, nil];
+    
     tc1 = [NSString stringWithFormat:@"category1"];
     tc2 = [NSString stringWithFormat:@"category2"];
     tc3 = [NSString stringWithFormat:@"category3"];
@@ -67,7 +72,27 @@
 }
 
 - (void)testInit {
-    /* TODO */
+    task1 = [[AETask alloc] initWithName:tn1];
+    task2 = [[AETask alloc] initWithName:tn1 
+                                 DueDate:nowDate];
+    task3 = [[AETask alloc] initWithName:tn1 
+                                 DueDate:nowDate 
+                                Priority:100];
+    task4 = [[AETask alloc] initWithName:tn1 
+                                 DueDate:nowDate 
+                                Priority:100 
+                                 TagList:tl1];
+    task5 = [[AETask alloc] initWithName:tn1 
+                                 DueDate:nowDate 
+                                Priority:100 
+                                 TagList:tl1 
+                                   State:AETStateInProgress];
+    task6 = [[AETask alloc] initWithName:tn1 
+                                 DueDate:nowDate 
+                                Priority:100 
+                                 TagList:tl1 
+                                   State:AETStateInProgress 
+                                Category:tc1];
 }
 
 @end
