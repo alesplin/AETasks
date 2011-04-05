@@ -8,6 +8,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
+@class AETask;
 
 @interface AETasksTests : SenTestCase {
     NSString    *tn1;
@@ -31,6 +32,12 @@
     NSDate      *fd1;
     NSDate      *fd2;
     NSDate      *fd3;
+    
+    AETask      *task1;
+    AETask      *task2;
+    AETask      *task3;
+    AETask      *task4;
+    AETask      *task5;
     
 @private
     

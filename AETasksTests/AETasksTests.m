@@ -7,6 +7,7 @@
 //
 
 #import "AETasksTests.h"
+#import "AETask.h"
 
 
 @implementation AETasksTests
@@ -65,9 +66,8 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in AETasksTests");
+- (void)testInit {
+    /* TODO */
 }
 
 @end
