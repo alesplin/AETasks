@@ -28,7 +28,7 @@
     tag4 = [NSString stringWithFormat:@"tag4"];
     tag5 = [NSString stringWithFormat:@"tag5"];
     
-    tl1 = [NSMutableArray arrayWithObjects:tag1,tag2,tag3,tag4,tag5 nil];
+    tl1 = [NSMutableArray arrayWithObjects:tag1,tag2,tag3,tag4,tag5, nil];
     tl2 = [NSMutableArray arrayWithObjects:tag1,tag3,tag5, nil];
     tl3 = [NSMutableArray arrayWithObjects:tag2,tag4, nil];
     tl4 = [NSMutableArray arrayWithObjects:tag1,tag2,tag3,tag5, nil];
@@ -45,29 +45,7 @@
 }
 
 - (void)tearDown
-{
-    [tn1 release];
-    [tn2 release];
-    [tn3 release];
-    [tn4 release];
-    [tn5 release];
-    
-    [tag1 release];
-    [tag2 release];
-    [tag3 release];
-    [tag4 release];
-    [tag5 release];
-    
-    [tc1 release];
-    [tc2 release];
-    [tc3 release];
-    [tc4 release];
-    
-    [nowDate release];
-    [fd1 release];
-    [fd2 release];
-    [fd3 release];
-    
+{    
     [super tearDown];
 }
 
@@ -93,6 +71,56 @@
                                  TagList:tl1 
                                    State:AETStateInProgress 
                                 Category:tc1];
+    
+    STAssertEquals(task1.name, 
+                   tn1, 
+                   @"Expected: %@ Actual: %@",
+                   tn1,task1.name);
+    STAssertEquals(task2.dueDate, 
+                   nowDate, 
+                   @"Expected: %@ Actual: %@", 
+                   nowDate,task2.dueDate);
+    STAssertEquals(task3.priority, 
+                   100, 
+                   @"Expected: %d Actual: %d", 
+                   100,task3.priority);
+    
+    for (int i = 0; i < [task4.tagList count]; i++) {
+        NSString *actual = [task4.tagList objectAtIndex:i];
+        NSString *expected = [tl1 objectAtIndex:i];
+        STAssertEquals(actual, expected, @"Expected: %@ Actual: %@", expected,actual);
+    }
+    
+    STAssertEquals(task5.state, 
+                   AETStateInProgress, 
+                   @"Expected: %d Actual: %d", 
+                   AETStateInProgress,task5.state);
+    STAssertEquals(task6.category, 
+                   tc1, 
+                   @"Expected:%@ Actual: %@", 
+                   tc1,task6.category);
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

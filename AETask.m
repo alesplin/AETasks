@@ -17,6 +17,8 @@
 @synthesize priority=Priority;
 @synthesize state=State;
 @synthesize dueDate=DueDate;
+@synthesize tagList=TagList;
+@synthesize category=Category;
 
 /**
  Return a ", " delimited list of tags belonging to this task
@@ -24,7 +26,7 @@
  @param None
  @return NSString
  */
-- (NSString *)tagList {
+- (NSString *)tagListAsString {
     int tIndex;
     
     NSMutableString *tl = [[NSString alloc] initWithFormat:@""];

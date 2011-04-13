@@ -30,7 +30,8 @@
 @property (readwrite,assign)    int         priority;
 @property (readwrite,assign)    AETState    state;
 @property (readwrite,retain)    NSDate      *dueDate;
-@property (readonly)            NSString    *tagList;
+@property (readonly)            NSArray     *tagList;
+@property (readwrite,retain)    NSString    *category;
 
 #pragma mark Instance Initialization
 
