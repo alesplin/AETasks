@@ -76,6 +76,16 @@
                    tn1, 
                    @"Expected: %@ Actual: %@",
                    tn1,task1.name);
+    STAssertTrue(task1.priority == NO_PRIORITY, 
+                 @"Expected: %d Actual: %d", NO_PRIORITY,task1.priority);
+    STAssertTrue([task1.dueDate isEqualToDate:[NSDate distantFuture]], 
+                 @"Expcted: %@ Actual: %@", [NSDate distantFuture], task1.dueDate);
+    STAssertTrue((task1.tagList != nil) && ([task1.tagList count] == 0), 
+                 @"task1.tagList nil or has items...");
+    STAssertTrue(task1.state == AETStateNone, 
+                 @"Expected: %d Actual: %d", AETStateNone,task1.state);
+    STAssertTrue([task1.category isEqualToString:@"None"], 
+                 @"Expected: %@ Actual: %@", @"None",task1.category);
     STAssertEquals(task2.dueDate, 
                    nowDate, 
                    @"Expected: %@ Actual: %@", 
