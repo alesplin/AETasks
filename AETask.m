@@ -298,6 +298,48 @@
     return [TaskName localizedCompare:otherTask.name];
 }
 
+#pragma mark Copying
+/**
+ Convenience function...
+ */
+- (id) copy {
+    return [self copyWithZone:NULL];
+}
+
+/**
+ Make a deep copy of myself
+ */
+- (id) copyWithZone:(NSZone *)zone {
+    AETask *nt;
+    NSMutableArray *ntl = [[NSMutableArray allocWithZone:zone] 
+                           initWithCapacity:[TagList count]];
+    
+    for (NSString *t in TagList) {
+        [ntl addObject:[t copy]];
+    }
+    
+    if (zone) {
+        nt = [[AETask allocWithZone:zone] 
+              initWithName:[TaskName copy] 
+              DueDate:[DueDate copy] 
+              Priority:Priority 
+              TagList:ntl 
+              State:State 
+              Category:[Category copy]];
+    }
+    else {
+        nt = [[AETask allocWithZone:NSDefaultMallocZone()] 
+              initWithName:[TaskName copy] 
+              DueDate:[DueDate copy] 
+              Priority:Priority 
+              TagList:ntl 
+              State:State 
+              Category:[Category copy]];
+    }
+    
+    return nt;
+}
+
 #pragma mark Bookkeeping
 - (void)dealloc
 {

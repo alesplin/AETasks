@@ -10,7 +10,7 @@
 #import "StandardIncludes.h"
 
 
-@interface AETask : NSObject {
+@interface AETask : NSObject  <NSCopying> {
     
     NSString        *TaskName;
     NSString        *Category;
@@ -91,7 +91,11 @@
 
 - (BOOL)                hasTag:(NSString *)     tag;
 - (BOOL)                isEqual:(id)            other;
-- (NSComparisonResult)  compareTo:(id)    other;
+- (NSComparisonResult)  compareTo:(id)          other;
+
+# pragma mark Copying
+- (id) copy;
+- (id) copyWithZone:(NSZone *)zone;
 
 @end
 

@@ -173,6 +173,10 @@
                    tc1,task6.category);
 }
 
+- (void) testTaskCopy {
+    
+}
+
 @end
 
 
