@@ -312,10 +312,12 @@
 - (id) copyWithZone:(NSZone *)zone {
     AETask *nt;
     NSMutableArray *ntl = [[NSMutableArray allocWithZone:zone] 
-                           initWithCapacity:[TagList count]];
+                           init];
     
-    for (NSString *t in TagList) {
-        [ntl addObject:[t copy]];
+    if ([TagList count] > 0) {
+        for (NSString *t in TagList) {
+            [ntl addObject:[t copy]];
+        }
     }
     
     if (zone) {

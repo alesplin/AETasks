@@ -72,7 +72,7 @@
                                    State:AETStateInProgress 
                                 Category:tc1];
     
-    STAssertEquals(task1.name, 
+    STAssertEqualObjects(task1.name, 
                    tn1, 
                    @"Expected: %@ Actual: %@",
                    tn1,task1.name);
@@ -86,7 +86,7 @@
                  @"Expected: %d Actual: %d", AETStateNone,task1.state);
     STAssertTrue([task1.category isEqualToString:@"None"], 
                  @"Expected: %@ Actual: %@", @"None",task1.category);
-    STAssertEquals(task2.dueDate, 
+    STAssertEqualObjects(task2.dueDate, 
                    nowDate, 
                    @"Expected: %@ Actual: %@", 
                    nowDate,task2.dueDate);
@@ -98,14 +98,14 @@
     for (int i = 0; i < [task4.tagList count]; i++) {
         NSString *actual = [task4.tagList objectAtIndex:i];
         NSString *expected = [tl1 objectAtIndex:i];
-        STAssertEquals(actual, expected, @"Expected: %@ Actual: %@", expected,actual);
+        STAssertEqualObjects(actual, expected, @"Expected: %@ Actual: %@", expected,actual);
     }
     
     STAssertEquals(task5.state, 
                    AETStateInProgress, 
                    @"Expected: %d Actual: %d", 
                    AETStateInProgress,task5.state);
-    STAssertEquals(task6.category, 
+    STAssertEqualObjects(task6.category, 
                    tc1, 
                    @"Expected:%@ Actual: %@", 
                    tc1,task6.category);
@@ -134,7 +134,7 @@
                            State:AETStateInProgress 
                         Category:tc1];
     
-    STAssertEquals(task1.name, 
+    STAssertEqualObjects(task1.name, 
                    tn1, 
                    @"Expected: %@ Actual: %@",
                    tn1,task1.name);
@@ -148,7 +148,7 @@
                  @"Expected: %d Actual: %d", AETStateNone,task1.state);
     STAssertTrue([task1.category isEqualToString:@"None"], 
                  @"Expected: %@ Actual: %@", @"None",task1.category);
-    STAssertEquals(task2.dueDate, 
+    STAssertEqualObjects(task2.dueDate, 
                    nowDate, 
                    @"Expected: %@ Actual: %@", 
                    nowDate,task2.dueDate);
@@ -160,23 +160,57 @@
     for (int i = 0; i < [task4.tagList count]; i++) {
         NSString *actual = [task4.tagList objectAtIndex:i];
         NSString *expected = [tl1 objectAtIndex:i];
-        STAssertEquals(actual, expected, @"Expected: %@ Actual: %@", expected,actual);
+        STAssertEqualObjects(actual, expected, @"Expected: %@ Actual: %@", expected,actual);
     }
     
     STAssertEquals(task5.state, 
                    AETStateInProgress, 
                    @"Expected: %d Actual: %d", 
                    AETStateInProgress,task5.state);
-    STAssertEquals(task6.category, 
+    STAssertEqualObjects(task6.category, 
                    tc1, 
                    @"Expected:%@ Actual: %@", 
                    tc1,task6.category);
 }
 
 - (void) testTaskCopy {
+    task1 = [AETask taskWithName:tn1];
+    task2 = [task1 copy];
     
+    STAssertEqualObjects(task2.name, 
+                   task1.name, 
+                   @"Expected: %@ Actual: %@",
+                   task1.name,task2.name);
+    STAssertTrue(task2.priority == NO_PRIORITY, 
+                 @"Expected: %d Actual: %d", NO_PRIORITY,task2.priority);
+    STAssertTrue([task2.dueDate isEqualToDate:[NSDate distantFuture]], 
+                 @"Expcted: %@ Actual: %@", [NSDate distantFuture], task1.dueDate);
+    STAssertTrue((task2.tagList != nil) && ([task2.tagList count] == 0), 
+                 @"task1.tagList nil or has items...");
+    STAssertTrue(task2.state == AETStateNone, 
+                 @"Expected: %d Actual: %d", AETStateNone,task2.state);
+    STAssertTrue([task2.category isEqualToString:@"None"], 
+                 @"Expected: %@ Actual: %@", @"None",task2.category);
+    
+    task3 = [AETask taskWithName:tn1 
+                         DueDate:nowDate 
+                        Priority:100 
+                         TagList:tl1 
+                           State:AETStateInProgress 
+                        Category:tc1];
+    task4 = [task3 copy];
+    
+    STAssertEqualObjects(task3.name,
+                   task4.name,
+                   @"Expected: %@ Actual: %@",
+                   task3.name,task4.name);
+    STAssertTrue(task4.priority == task3.priority, 
+                 @"Expected: %d Actual: %d", task3.priority,task4.priority);
+    STAssertEqualObjects(task4.dueDate,
+                   task3.dueDate, 
+                   @"Expected: %@ Actual: %@",
+                   task3.dueDate,task4.dueDate);
 }
-
 @end
 
 
