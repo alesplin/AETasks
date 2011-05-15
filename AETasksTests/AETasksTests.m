@@ -211,6 +211,24 @@
                    @"Expected: %@ Actual: %@",
                    task3.dueDate,task4.dueDate);
 }
+
+- (void) testTaskIsEqual {
+    task1 = [AETask taskWithName:tn1 
+                         DueDate:nowDate 
+                        Priority:100 
+                         TagList:tl2 
+                           State:AETStateInProgress 
+                        Category:tc1];
+    task2 = [[AETask alloc] initWithName:tn1 
+                                 DueDate:nowDate 
+                                Priority:100 
+                                 TagList:tl2 
+                                   State:AETStateInProgress 
+                                Category:tc1];
+    
+    STAssertTrue([task1 isEqual:task2], @"Expected: %d, Actual: %d", YES,NO);
+}
+
 @end
 
 
