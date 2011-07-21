@@ -269,13 +269,17 @@
  
  @param other -- the task we're checking
  
- @return    True if this task has the same name as the other task
+ @return    True if this task has the same name, category, and due date as the 
+            other task
+            
             False otherwise
  */
-- (BOOL) isEqual:(id)other {
+- (BOOL) isEqualToTask:(id)other {
     AETask *otherTask = (AETask *)other;
     
-    if ([TaskName isEqualToString:otherTask.name]) {
+    if (([TaskName isEqualToString:otherTask.name]) &&
+        ([DueDate isEqualToDate:otherTask.dueDate]) &&
+        ([Category isEqualToString:otherTask.category])) {
         return YES;
     }
     return NO;

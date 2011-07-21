@@ -225,8 +225,38 @@
                                  TagList:tl2 
                                    State:AETStateInProgress 
                                 Category:tc1];
+    task3 = [[AETask alloc] initWithName:tn1 
+                                 DueDate:fd2 
+                                Priority:100 
+                                 TagList:tl2 
+                                   State:AETStateInProgress 
+                                Category:tc1];
+    task4 = [[AETask alloc] initWithName:tn1 
+                                 DueDate:nowDate 
+                                Priority:100 
+                                 TagList:tl2 
+                                   State:AETStateInProgress 
+                                Category:tc2];
+    task5 = [[AETask alloc] initWithName:tn1 
+                                 DueDate:nowDate 
+                                Priority:0 
+                                 TagList:nil 
+                                   State:AETStateNone 
+                                Category:tc1];
+    task6 = [AETask taskWithName:tn2 
+                         DueDate:nowDate 
+                        Priority:100 
+                         TagList:tl2 
+                           State:AETStateInProgress 
+                        Category:tc1];
     
-    STAssertTrue([task1 isEqual:task2], @"Expected: %d, Actual: %d", YES,NO);
+    STAssertTrue([task1 isEqualToTask:task2], @"Expected: %d, Actual: %d", YES,NO);
+    STAssertTrue([task1 isEqualToTask:task5], @"Expected: %d, Actual: %d", YES,NO);
+    
+    STAssertFalse([task1 isEqualToTask:task3], @"Expected %d, Actual: %d", YES,NO);
+    STAssertFalse([task1 isEqualToTask:task4], @"Expected %d, Actual: %d", YES,NO);
+    STAssertFalse([task1 isEqualToTask:task6], @"Expected %d, Actual: %d", YES,NO);
+    
 }
 
 @end

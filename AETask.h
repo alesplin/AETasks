@@ -90,7 +90,7 @@
 #pragma mark Task Identifiers
 
 - (BOOL)                hasTag:(NSString *)     tag;
-- (BOOL)                isEqual:(id)            other;
+- (BOOL)                isEqualToTask:(id)            other;
 - (NSComparisonResult)  compareTo:(id)          other;
 
 # pragma mark Copying
